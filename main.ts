@@ -1,12 +1,13 @@
-// News-image entry: copy the committed front page to the grader output.
-// Node 22, standard library only, no network access. The output directory
-// comes from MAKEFUN_OUTPUT_DIR when the harness sets it, else /output.
-import { copyFileSync, mkdirSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-const outFile = join(outDir, "entry.png");
 const here = dirname(fileURLToPath(import.meta.url));
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
-copyFileSync(join(here, "entry.png"), outFile);
+const src = join(here, "entry.png");
+const dst = join(outDir, "entry.png");
+if (!existsSync(src)) {
+  throw new Error("entry.png not found next to main.ts");
+}
+copyFileSync(src, dst);
