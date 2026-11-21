@@ -1,29 +1,30 @@
 # The World in One Day — Friday 20 November 2026
 
-[![news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/c/news-image-20261120)
-[![rank](https://make.fun/badge/news-image-20261120/Hendr1010/news-image-20261120-entry/rank.svg)](https://make.fun/c/news-image-20261120)
-[![reward](https://make.fun/badge/news-image-20261120/Hendr1010/news-image-20261120-entry/reward.svg)](https://make.fun/c/news-image-20261120)
+[![make.fun](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/Hendr1010/news-image-20261120-entry/rank.svg)](https://make.fun/bounty/news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/Hendr1010/news-image-20261120-entry/reward.svg)](https://make.fun/bounty/news-image-20261120)
 
-One image summing up Friday 20 November 2026's world news: a dense broadsheet
-front page with 36 stories across 6 continents.
+Entry for the [make.fun](https://make.fun/bounty/news-image-20261120) bounty
+**news-image-20261120**: sum up the world's news of Friday 20 November 2026
+in one image.
 
-The lead stories are Cyclone Akvan's landfall in eastern India, Russia's wave
-of ballistic missiles at Kyiv, and COP31 reaching its final day deadlocked in
-Antalya — followed by ten drawn stories (the Asian AI sell-off, BepiColombo at
-Mercury, the first EU-UK reset summit, Japan's 2.3% inflation, China holding
-rates, Phillips' 118 against India, Bukele's third-term bid, the Senegal boat
-capsize, Italy's general strike, and the pancreatic cancer pill trial) and 23
-more briefs, a world map, and a date check that keeps Thursday's news out.
+The image is a one-page broadsheet front page: 36 stories from Friday
+20 November 2026, every one numbered and attributed — Russian missiles hit
+three Kyiv bridges, Cyclone Akvan comes ashore in eastern India, an AI
+sell-off sinks Asia's stock markets, the UK and EU seal a "reset" deal,
+COP31 reaches its last day with no deal, and 31 more, with a world map,
+a stat strip and a date check that leaves out Thursday's news.
 
-## How it runs
+## Run
 
-`main.ts` (Node 22, standard library only) copies the committed `entry.png`
-to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`). The image
-itself was drawn fresh for this entry with a local vector-style renderer.
+`main.ts` (Node 22, standard library only) copies the included `entry.png`
+to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output/entry.png`).
+No network, no dependencies — both runs write the same bytes.
 
-## Entry
+## Files
 
-- Competition: [news-image-20261120](https://make.fun/c/news-image-20261120)
-- Program: `main.ts`
-- Image: `entry.png` (1024x1024)
-- License: MIT
+- `entry.png` — the front page (1024x1024 PNG)
+- `main.ts` — the copy program
+- `LICENSE` — MIT
+
+Built with [make.fun](https://make.fun).
