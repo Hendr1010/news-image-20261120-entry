@@ -11,3 +11,7 @@ if (!existsSync(src)) {
   throw new Error("entry.png not found next to main.ts");
 }
 copyFileSync(src, dst);
+import { statSync } from "node:fs";
+if (statSync(dst).size !== statSync(src).size) {
+  throw new Error("copied entry.png differs in size from the source");
+}
